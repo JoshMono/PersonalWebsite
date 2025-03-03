@@ -1,0 +1,110 @@
+
+
+{% extends 'MainApp/base.html' %}
+
+{% block content %}
+    
+    <h1>Home Page</h1>
+    <p>Welcome to the home page of the MainApp</p>
+
+    <form action="">
+
+        <select name="choice" id="choice">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+
+        </select>
+
+    </form>
+
+    <div style="display: None; background-color: ;" value="1" id="a">Test1</div>
+    <div style="display: None;" value="2" id="b">Test2</div>
+    <div style="display: None;" value="3" id="c">Test3</div>
+
+    <table id="table">
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                3
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                4
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                6
+            </td>
+            
+        </tr>
+
+    </table>
+
+
+
+
+<!-- <script>
+
+    const a = document.querySelector("#a");
+    const b = document.querySelector("#b");
+    const c = document.querySelector("#c");
+    
+    const selector = document.querySelector("#choice");
+    selector.addEventListener("change", function(e) {
+        
+        console.log(e);
+        if (e.target.value == '1'){
+            a.style.display = 'block'
+            b.style.display = "none"
+            c.style.display = "none"
+        }
+        else if (e.target.value == '2')
+        {
+            a.style.display = "none"
+            b.style.display = 'block'
+            c.style.display = "none"
+        }
+        else if (e.target.value == '3')
+        {
+            a.style.display = "none"
+            b.style.display = "none"
+            c.style.display = 'block'
+        }
+    })
+
+    const table = document.querySelector("#table")
+
+    
+    table.addEventListener("click", mouseOver);
+    // table.addEventListener("click", mouseLeave);
+
+    
+
+    function mouseOver (e) {
+        // console.log(e.target)
+        if  (e.target.style.backgroundColor == "red"){
+            e.target.style.backgroundColor = "white";
+        }
+        else{
+
+            e.target.style.backgroundColor = "red";
+        }
+    }
+    function mouseLeave (e) {
+        console.log(e)
+        e.target.style.backgroundColor = "white";
+    }
+
+</script> -->
+
+{% endblock %}
