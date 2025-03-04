@@ -23,13 +23,13 @@
             <div class="NavBarUlDiv" >
               <ul class="navbar-nav d-flex flex-row flex-wrap">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                  <a class="nav-link {% if request.resolver_match.url_name == 'index' %}active{% endif %}" aria-current="page" href="{% url 'index' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+                  <a class="nav-link {% if request.resolver_match.url_name == 'projects' %}active{% endif %}" href="{% url 'projects' %}">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'about' %}">About Me</a>
+                  <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About Me</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled" style="color: rgb(168, 168, 168);" aria-disabled="true">Work</a>
