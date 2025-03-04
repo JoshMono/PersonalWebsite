@@ -1,4 +1,28 @@
 .ProjectsDiv h1 {
     border-bottom: 1px solid rgb(245, 245, 245);
+    padding-bottom: 15px;
+}
+
+.card-body {
+    border: 1px solid rgb(245, 245, 245);
+    background-color: rgb(56, 56, 56);
     
+}
+
+
+
+.card-body h5 {
+    color: rgb(245, 245, 245);
+}
+
+.card-body p {
+    color: rgb(190, 190, 190);
+}
+
+.card-body li {
+    color: rgb(190, 190, 190);
+}
+
+.CarouselSlide {
+    padding: 1px;
 }
