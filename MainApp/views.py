@@ -5,3 +5,11 @@ from django.http import HttpResponse
 def index(request):
     context = {}
     return render(request, "MainApp/index.html", context=context)
+
+def projects(request):
+    context = {}
+    return render(request, "MainApp/projects.html", context=context)
+
+def about(request):
+    context = {}
+    return render(request, "MainApp/about.html", context=context)

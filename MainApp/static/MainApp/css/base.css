@@ -1,3 +1,7 @@
+/*      */
+/* BODY */
+/*      */
+
 .BodyDiv {
     margin: 0%;
     padding: 0%;
@@ -7,45 +11,65 @@
     color: rgb(214, 214, 214);
 }
 
-.HeroBannerDiv {
-    margin: 0%;
-    border: 1px solid rgb(245, 245, 245);
-    
-    margin-bottom: 80px;
-}
 
-.HeroImage {
-    width: 100%;
-    height: auto;
-}
+
+
+
+
+
+/*            */
+/* NAVIGATION */
+/*            */
 
 .NavBarDiv {
-    background-color: rgb(34, 34, 34);
-    color: rgb(245, 245, 245);
+    background: rgb(133, 3, 255);
+    
 }
 
 .navbar-nav .nav-link {
     font-size: 18px;  
     margin-right: 20px;
+    transition: 0.3s ease-in-out;
 }
 
-.pfpImage {
-    width: 20%;
-    height: auto;
+.navbar-nav .nav-link:not(.disabled) {
+    color: rgb(245, 245, 245);
 }
 
-.DividerDiv {
-    padding: 20px;
-    padding: 20px;
+.navbar-nav .nav-link:hover {
+    
+    color: #a8a8a8;
+}
+
+.NavBarUlDiv {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.NavBarIcons a {
+    color: white; 
+    transition: 0.3s ease-in-out;
+}
+
+.NavBarIcons a:hover {
+    color: #a8a8a8; 
+}
+
+
+
+
+
+
+
+/*        */
+/* Footer */
+/*        */
+
+.FooterDiv {
     background-color: rgb(56, 56, 56);
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
     border-top: 1px solid rgb(245, 245, 245);
-    border-bottom: 1px solid rgb(245, 245, 245);
-}
-
-.MainContentDiv {
-    margin: 0%;
-    padding: 0%;
-    background-color: rgb(34, 34, 34);
-    
+    margin-top: 100px;
 }

@@ -1,0 +1,74 @@
+.HeroBannerDiv {
+    margin: 0%;
+    border-top: 1px solid rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245);
+    
+    margin-bottom: 100px;
+}
+
+.pfpImage {
+    width: 20%;
+    height: auto;
+}
+.HeroImage {
+    width: 100%;
+    height: auto;
+}
+.MainContentDiv {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.DividerDiv {
+    padding: 20px;
+    padding: 20px;
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+    border-top: 1px solid rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245);
+    margin-bottom: 100px;
+
+
+}
+
+.DividerDiv h1 {
+    font-size: 34px;
+    
+}
+
+
+.DividerDiv p {
+    font-size: 20px;
+    color: rgb(190, 190, 190);
+}
+
+.PortfolioDiv {
+    margin-bottom: 100px;
+}
+
+.PortfolioDiv h1{
+    padding-bottom: 15px;
+}
+
+.PortfolioDiv h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.PortfolioItem p {
+    font-size: 16px;
+    padding: 0% 10%;
+    color: rgb(190, 190, 190);
+}
+
+.PortfolioButton {
+    margin-top: 30px;
+    font-size: 19px;
+    transition: 0.3s ease-in-out;
+}
+
+.PortfolioButton:hover{
+    background-color: #a8a8a8;
+}

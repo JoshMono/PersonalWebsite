@@ -1,0 +1,48 @@
+{% extends 'MainApp/base.html' %}
+
+{% block title %}Projects - My Portfolio{% endblock %}
+
+{% block content %}
+    <div class="container my-5 ProjectsDiv">
+        <h1 class="text-center mb-5">My Projects</h1>
+        <div class="row">
+            <!-- Example Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    
+                    <!-- IMG CARRASEL -->
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">A brief description of Project 1. This project is about...</p>
+                        <a href="https://github.com/JoshMono/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A brief description of Project 2. This project is about...</p>
+                        <a href="https://github.com/JoshMono/project2" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Project 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">A brief description of Project 3. This project is about...</p>
+                        <a href="https://github.com/JoshMono/project3" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
