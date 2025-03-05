@@ -1,0 +1,16 @@
+.AboutDiv h1 {
+    border-bottom: 1px solid rgb(245, 245, 245);
+    padding-bottom: 15px;
+}
+
+.UlFormating {
+    list-style-type: none;
+    margin-top: 3px;
+    color: rgb(190, 190, 190);
+    
+    padding-left: 0px;
+}
+
+.H2Formatting {
+    margin-top: 55px;
+}

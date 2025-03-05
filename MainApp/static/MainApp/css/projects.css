@@ -9,7 +9,9 @@
     
 }
 
-
+.ProjectsRow{
+    margin-bottom: 30px;
+}
 
 .card-body h5 {
     color: rgb(245, 245, 245);
