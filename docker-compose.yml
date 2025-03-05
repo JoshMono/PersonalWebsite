@@ -5,5 +5,7 @@ services:
     container_name: web
     restart: always
     build: .
+    volumes:
+      - .:/code
     ports:
       - "8000:8000"
