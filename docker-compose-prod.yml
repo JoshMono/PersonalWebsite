@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   web:
     container_name: web
@@ -7,7 +5,7 @@ services:
     build: .
     volumes:
       - .:/code
-      - static_volume:/code/PersonalWebsite/staticfiles
+      - static_volume:/code/staticfiles
     ports:
       - "8000:8000"
 
@@ -17,11 +15,12 @@ services:
     container_name: nginx
     build: ./nginx
     ports:
-      - "1337:80"
-    volumes:
-      - static_volume:/code/PersonalWebsite/staticfiles
+      - "80:80"
+    restart: always
     depends_on:
       - web
+    volumes:
+      - static_volume:/code/staticfiles
 
 volumes:
   static_volume:
