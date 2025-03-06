@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    container_name: web
+    restart: always
+    build: .
+    volumes:
+      - .:/code
+      - static_volume:/code/PersonalWebsite/staticfiles
+    ports:
+      - "8000:8000"
+
+    command: ["gunicorn", "--bind", "0.0.0.0:8000", "PersonalWebsite.wsgi:application", ]
+
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    ports:
+      - "1337:80"
+    volumes:
+      - static_volume:/code/PersonalWebsite/staticfiles
+    depends_on:
+      - web
+
+volumes:
+  static_volume:

@@ -21,5 +21,3 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 RUN rm -f requirements.txt
-
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
