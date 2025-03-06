@@ -23,6 +23,5 @@ RUN rm -f requirements.txt
 
 RUN python manage.py collectstatic --noinput
 RUN chmod -R 755 /code/staticfiles
-RUN chown -R www-data:www-data /code/staticfiles
 
 USER django
