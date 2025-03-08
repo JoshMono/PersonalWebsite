@@ -1,9 +1,9 @@
-version: '3'
-
 services:
   web:
     container_name: web
     restart: always
+    environment:
+      - DJANGO_DEBUG=True
     build: .
     volumes:
       - .:/code

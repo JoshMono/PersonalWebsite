@@ -1,6 +1,8 @@
 services:
   web:
     container_name: web
+    environment:
+      - DJANGO_DEBUG=False
     restart: always
     build: .
     volumes:
